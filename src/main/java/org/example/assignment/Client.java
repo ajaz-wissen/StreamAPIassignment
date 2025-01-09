@@ -70,5 +70,12 @@ public class Client {
             System.out.println();
         });
 
+        employees.stream()
+                .filter(emp -> {
+                    System.out.println("Inside filter..........");
+                    return emp.getAge() > 30;
+                });
+
+
     }
 }
